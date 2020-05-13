@@ -54,25 +54,24 @@ table td {
   color: #000;
   font-weight: 600;
   position: relative;
-}
 
-.caption .plus {
-  position: absolute;
-  top: -50px;
-  right: 185px;
-}
+  .plus {
+    position: absolute;
+    top: -50px;
+    right: 185px;
+  }
 
-.caption .triangle {
-  position: absolute;
-  top: 150px;
-  left: -20px;
+  .triangle {
+    position: absolute;
+    top: 150px;
+    left: -20px;
+  }
 }
 
 .carousel {
   margin: 0 135px 60px 135px;
   position: relative;
 }
-
 .slick-slide {
   float: left;
   max-width: 440px;
@@ -84,8 +83,7 @@ table td {
   position: absolute;
   z-index: 1000;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 96px;
   height: 96px;
   padding: 0;
@@ -101,7 +99,6 @@ table td {
   left: -110px;
   background-image: url(../images/arrow-prev.png);
 }
-
 .slick-next {
   right: -110px;
   background-image: url(../images/arrow-next.png);
@@ -115,47 +112,44 @@ table td {
   position: relative;
   width: 440px;
   height: 400px;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-}
+  img {
+    width: 440px;
+    height: 400px;
+  }
+  transition-duration: 0.3s;
+  &:hover {
+    .text {
+      display: block;
+    }
+  }
 
-.img img {
-  width: 440px;
-  height: 400px;
-}
+  .text {
+    background: rgba(#1bf1ad, 0.9);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 440px;
+    height: 400px;
 
-.img:hover .text {
-  display: block;
+    .name {
+      position: absolute;
+      left: 30px;
+      bottom: 65px;
+      font-size: 28px;
+      letter-spacing: 6px;
+      line-height: 24px;
+      color: #fff;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .author {
+      position: absolute;
+      left: 30px;
+      bottom: 35px;
+      color: #fff;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
 }
-
-.img .text {
-  background: rgba(27, 241, 173, 0.9);
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 440px;
-  height: 400px;
-}
-
-.img .text .name {
-  position: absolute;
-  left: 30px;
-  bottom: 65px;
-  font-size: 28px;
-  letter-spacing: 6px;
-  line-height: 24px;
-  color: #fff;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.img .text .author {
-  position: absolute;
-  left: 30px;
-  bottom: 35px;
-  color: #fff;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-/*# sourceMappingURL=main.css.map */
