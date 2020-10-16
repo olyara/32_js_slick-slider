@@ -69,13 +69,14 @@ table td {
 }
 
 .carousel {
-  margin: 0 135px 60px 135px;
+  margin: 0 auto 60px;
   position: relative;
+  max-width: 1380px;
 }
 
 .slick-slide {
   float: left;
-  max-width: 440px;
+  width: 440px;
   height: 400px;
 }
 
