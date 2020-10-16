@@ -77,7 +77,6 @@ table td {
   float: left;
   max-width: 440px;
   height: 400px;
-  margin: 0 50px;
 }
 
 .slick-arrow {
@@ -117,6 +116,7 @@ table td {
   height: 400px;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
+  cursor: pointer;
 }
 
 .img img {
